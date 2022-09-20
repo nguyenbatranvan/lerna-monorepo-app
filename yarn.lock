@@ -1800,6 +1800,15 @@
   "resolved" "https://registry.npmjs.org/@chakra-ui/visually-hidden/-/visually-hidden-2.0.10.tgz"
   "version" "2.0.10"
 
+"@craco/craco@^5.9.0":
+  "integrity" "sha512-2Q8gIB4W0/nPiUxr9iAKUhGsFlXYN0/wngUdK1VWtfV2NtBv+yllNn2AjieaLbttgpQinuOYmDU65vocC0NMDg=="
+  "resolved" "https://registry.npmjs.org/@craco/craco/-/craco-5.9.0.tgz"
+  "version" "5.9.0"
+  dependencies:
+    "cross-spawn" "^7.0.0"
+    "lodash" "^4.17.15"
+    "webpack-merge" "^4.2.2"
+
 "@craco/craco@^7.0.0-alpha.3":
   "integrity" "sha512-3RU+Ur1GvBQKDBL1JhssSgazc8s3pMAgndyS+95UaXdMTuozpI9h4k4OokQRRjiLmr7i0y39l6fBZvknGj2i1w=="
   "resolved" "https://registry.npmjs.org/@craco/craco/-/craco-7.0.0-alpha.7.tgz"
@@ -5724,12 +5733,24 @@
     "path-type" "^4.0.0"
     "yaml" "^1.10.0"
 
+"craco-alias@^3.0.1":
+  "integrity" "sha512-N+Qaf/Gr/f3o5ZH2TQjMu5NhR9PnT1ZYsfejpNvZPpB0ujdrhsSr4Ct6GVjnV5ostCVquhTKJpIVBKyL9qDQYA=="
+  "resolved" "https://registry.npmjs.org/craco-alias/-/craco-alias-3.0.1.tgz"
+  "version" "3.0.1"
+
+"craco-babel-loader-plugin@^1.0.3":
+  "integrity" "sha512-hnLK2MgihdrMkizZ51RaiI2MbBbI7g0GX05/D+lR95AIrUhv1+pNjbYpabpCgySw2+WZ9M6VVsWp4N4j+4jP0w=="
+  "resolved" "https://registry.npmjs.org/craco-babel-loader-plugin/-/craco-babel-loader-plugin-1.0.3.tgz"
+  "version" "1.0.3"
+  dependencies:
+    "@craco/craco" "^5.9.0"
+
 "create-require@^1.1.0":
   "integrity" "sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ=="
   "resolved" "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
   "version" "1.1.1"
 
-"cross-spawn@^7.0.2", "cross-spawn@^7.0.3":
+"cross-spawn@^7.0.0", "cross-spawn@^7.0.2", "cross-spawn@^7.0.3":
   "integrity" "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w=="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
   "version" "7.0.3"
@@ -11297,6 +11318,8 @@
     "@types/node" "^16.11.59"
     "@types/react" "^18.0.20"
     "@types/react-dom" "^18.0.6"
+    "craco-alias" "^3.0.1"
+    "craco-babel-loader-plugin" "^1.0.3"
     "framer-motion" "^7.3.5"
     "react" "^18.2.0"
     "react-dom" "^18.2.0"
@@ -11439,7 +11462,7 @@
   dependencies:
     "@remix-run/router" "1.0.0"
 
-"react-scripts@^5.0.0", "react-scripts@5.0.1":
+"react-scripts@*", "react-scripts@^5.0.0", "react-scripts@5.0.1":
   "integrity" "sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ=="
   "resolved" "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.1.tgz"
   "version" "5.0.1"
@@ -13412,6 +13435,13 @@
   dependencies:
     "tapable" "^2.0.0"
     "webpack-sources" "^2.2.0"
+
+"webpack-merge@^4.2.2":
+  "integrity" "sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g=="
+  "resolved" "https://registry.npmjs.org/webpack-merge/-/webpack-merge-4.2.2.tgz"
+  "version" "4.2.2"
+  dependencies:
+    "lodash" "^4.17.15"
 
 "webpack-merge@^5.8.0":
   "integrity" "sha512-/SaI7xY0831XwP6kzuwhKWVKDP9t1QY1h65lAFLbZqMPIuYcD9QAW4u9STIbU9kaJbPBB/geU/gLr1wDjOhQ+Q=="
