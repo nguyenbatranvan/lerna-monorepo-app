@@ -1,6 +1,6 @@
 import {Box, Button, Heading, HStack, Image, Link, Text} from "@chakra-ui/react";
 import React from "react";
-import {useLoading} from "../../zustand/use-loading";
+import {useLoading} from "../../states/zustand/use-loading";
 
 interface BlogAuthorProps {
     date: Date;
@@ -25,10 +25,8 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 export function Blog({title}) {
     // @ts-ignore
-    const {setLoading} = useLoading();
+    // const {setLoading} = useLoading();
     return <Box padding={"12"} maxW={"7xl"} marginX={"auto"}>
-        <Button colorScheme={"blue"} onClick={() => setLoading(false)}>Show</Button>
-        <Button colorScheme={"red"} onClick={() => setLoading(true)}>Hide</Button>
         <Heading variant={"title"}>
             {title}
         </Heading>

@@ -6,5 +6,16 @@ module.exports = withPlugins([withTM(), withImages], {
     // custom webpack config
     return config;
   },
+  optimizeFonts: false,
+  reactStrictMode: false,
+  eslint:{
+    ignoreDuringBuilds:true
+  },
+  env:{
+    DB_HOST : process.env.DB_HOST
+  },
+  experimental: {
+    outputStandalone: true,
+  },
   images: {},
 });
