@@ -1,13 +1,11 @@
 import {ChakraProvider} from "@chakra-ui/react";
 import Layout, {LinkItemProps} from "@shared/layout/layout";
+import {PagePropsModel} from "@shared/models/page-props-model";
 import {useSWRConfig} from "@shared/states/swr/use-config";
 import customTheme from "@shared/theme/theme";
 import type {AppProps} from 'next/app'
-import {NextRouter} from "next/dist/shared/lib/router/router";
-import {NextComponentType, NextPageContext} from "next/dist/shared/lib/utils";
 import {useRouter, withRouter} from "next/router";
 import {FiCodepen, FiCreditCard, FiHome} from "react-icons/fi";
-import {PagePropsModel} from "shared/src/models/page-props-model";
 import {SWRConfig} from 'swr';
 
 function MyApp({Component, pageProps}: AppProps<PagePropsModel>) {

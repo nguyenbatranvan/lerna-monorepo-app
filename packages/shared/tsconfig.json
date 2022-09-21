@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
       "@components/*": [
@@ -10,9 +9,28 @@
         "src/theme/*"
       ]
     },
+    "types": [
+      "node",
+      "source-map",
+      "webpack"
+    ],
     "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true
   },
   "noImplicitAny": true,
   "files": [],

@@ -1,9 +1,9 @@
-import {Grid, Heading, Image, Text} from "@chakra-ui/react";
+import {Grid} from "@chakra-ui/react";
+import {Card} from "@shared/components/card/card";
+import {ResponseProduct} from "@shared/models/response-product";
+import {BaseService} from "@shared/service/axios/core";
 import {AxiosResponse} from "axios";
 import {useEffect, useState} from "react";
-import {Card} from "shared/src/components/card/card";
-import {ResponseProduct} from "shared/src/models/response-product";
-import {BaseService} from "shared/src/service/axios/core";
 
 export function CardPage() {
     const [data, setData] = useState<ResponseProduct>({

@@ -8,23 +8,8 @@
     "noImplicitAny": true,
     "baseUrl": ".",
     "paths": {
-      "@shared/components/*": [
-        "packages/shared/src/components/*"
-      ],
-      "@shared/theme/*": [
-        "packages/shared/src/theme/*"
-      ],
-      "@shared/states/*": [
-        "packages/shared/src/states/*"
-      ],
-      "@shared/layout/*": [
-        "packages/shared/src/layout/*"
-      ],
-      "@shared/custom-components/*": [
-        "packages/shared/src/custom-components/*"
-      ],
-      "@shared/service/*": [
-        "packages/shared/src/service/*"
+      "@shared/*": [
+        "packages/shared/src/*"
       ]
     }
   }

@@ -1,17 +1,14 @@
 import {ChakraProvider} from "@chakra-ui/react";
+import customTheme from "@shared/theme/theme";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-dom";
-import {fetcherJSON} from "shared/src/service/swr/middle-ware-swr";
-import customTheme from "shared/src/theme/theme";
+import {BrowserRouter} from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 (async () => {
     // load config json file
-    const config =await fetcherJSON('/assets/config.json');
-    console.log('config', config);
+    // const config =await fetcherJSON('/assets/config.json');
     const root = ReactDOM.createRoot(
         document.getElementById('root') as HTMLElement
     );

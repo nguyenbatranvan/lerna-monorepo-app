@@ -4,6 +4,9 @@
     "paths": {
       "@page/*": [
         "../../packages/react-app/src/pages/*"
+      ],
+      "@shared/*": [
+        "../../packages/shared/src/*"
       ]
     }
   }

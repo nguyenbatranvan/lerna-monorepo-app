@@ -3,9 +3,9 @@ import {Blog} from "@shared/components/blog/blog";
 import SEO from "@shared/custom-components/SEO";
 import {useSWRConfig} from "@shared/states/swr/use-config";
 import {useSWRLoading} from "@shared/states/swr/use-loading";
+import {withAuthServerSideProps} from "@shared/utils/authentication-ssr";
 import type {NextPage} from 'next'
 import React, {useEffect} from "react";
-import {withAuthServerSideProps} from "shared/src/utils/authentication-ssr";
 
 const Home: NextPage = () => {
     const [loading, setLoading] = useSWRLoading();

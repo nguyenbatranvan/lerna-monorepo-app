@@ -1,7 +1,7 @@
-import {Grid, GridItem, Heading, Image, Text} from "@chakra-ui/react";
+import {Grid} from "@chakra-ui/react";
 import {Card} from "@shared/components/card/card";
+import {METHOD} from "@shared/constant/api-constant";
 import {CoreServiceSwr} from "@shared/service/swr/core-service-swr";
-import {METHOD} from "shared/src/constant/api-constant";
 
 function Product() {
     const {data} = CoreServiceSwr.get({

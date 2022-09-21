@@ -1,9 +1,9 @@
 import {CardPage} from "@page/Card";
 import {Home} from "@page/home";
+import Layout, {LinkItemProps} from "@shared/layout/layout";
 import React from 'react';
 import {FiCreditCard, FiHome} from "react-icons/fi";
 import {Outlet, Route, Routes, useNavigate} from "react-router-dom";
-import Layout, {LinkItemProps} from "shared/src/layout/layout";
 
 function App() {
     const menus: LinkItemProps[] = [{
