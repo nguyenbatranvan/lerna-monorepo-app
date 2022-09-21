@@ -1,10 +1,10 @@
 import {extendTheme} from "@chakra-ui/react";
-import {Card} from "./components/Card";
-import {Heading} from "./components/heading";
-import {Button} from "./components/Button";
+import {Card} from "@shared/theme/components/Card";
+import {Heading} from "@shared/theme/components/heading";
+import {Button} from "@shared/theme/components/Button";
 
 const customTheme = extendTheme({
-    components: {Button, Heading,Card},
+    components: {Button, Heading, Card},
     fonts: {
         heading: 'Montserrat, sans-serif',
         body: 'Montserrat, sans-serif'

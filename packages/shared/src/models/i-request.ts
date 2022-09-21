@@ -1,4 +1,4 @@
-import {METHOD} from "../constant/api-constant";
+import {METHOD} from "@shared/constant/api-constant";
 
 export interface IRequest<T = any> {
     url: string;

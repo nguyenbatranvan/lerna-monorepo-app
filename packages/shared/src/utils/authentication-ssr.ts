@@ -1,4 +1,4 @@
-import {fetcherJSON} from "../service/swr/middle-ware-swr";
+import {fetcherJSON} from "@shared/service/swr/middle-ware-swr";
 
 interface IOptionsAuth {
     needRole?: boolean;

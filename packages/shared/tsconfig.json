@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@theme/*": [
-        "src/theme/*"
-      ]
-    },
+//    "baseUrl": ".",
+//    "paths": {
+//      "@components/*": [
+//        "src/components/*"
+//      ],
+//      "@theme/*": [
+//        "src/theme/*"
+//      ]
+//    },
     "types": [
       "node",
       "source-map",
@@ -30,18 +30,19 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false
   },
-  "noImplicitAny": true,
-  "files": [],
-  "include": [],
-
-  "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ]
+  "extends": "../../tsconfig.json"
+  //  "files": [],
+//  "include": [],
+//
+//  "references": [
+//    {
+//      "path": "./tsconfig.lib.json"
+//    },
+//    {
+//      "path": "./tsconfig.spec.json"
+//    }
+//  ]
 }

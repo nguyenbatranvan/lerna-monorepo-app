@@ -1,6 +1,5 @@
-import {Box, Button, Heading, HStack, Image, Link, Text} from "@chakra-ui/react";
+import {Box, Heading, HStack, Image, Link, Text} from "@chakra-ui/react";
 import React from "react";
-import {useLoading} from "../../states/zustand/use-loading";
 
 interface BlogAuthorProps {
     date: Date;

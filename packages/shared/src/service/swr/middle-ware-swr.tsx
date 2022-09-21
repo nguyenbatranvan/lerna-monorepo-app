@@ -1,6 +1,6 @@
-import {METHOD} from "../../constant/api-constant";
-import {IRequest} from "../../models/i-request";
-import {useSWRLoading} from "../../states/swr/use-loading";
+import {METHOD} from "@shared/constant/api-constant";
+import {IRequest} from "@shared/models/i-request";
+import {useSWRLoading} from "@shared/states/swr/use-loading";
 
 function objToQueryString(obj) {
     const keyValuePairs: any = [];

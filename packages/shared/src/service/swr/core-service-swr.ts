@@ -1,8 +1,8 @@
-import {MiddleWareSwr} from "./middle-ware-swr";
-import {fetcher} from "./fetcher";
+import {IRequest} from "@shared/models/i-request";
+import {fetcher} from "@shared/service/swr/fetcher";
+import {MiddleWareSwr} from "@shared/service/swr/middle-ware-swr";
+import {useSWRLoading} from "@shared/states/swr/use-loading";
 import useSWR from "swr";
-import {useSWRLoading} from "../../states/swr/use-loading";
-import {IRequest} from "../../models/i-request";
 
 export const CoreServiceSwr = {
     get<T = any>(params: Partial<IRequest>) {

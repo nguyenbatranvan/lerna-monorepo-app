@@ -1,5 +1,5 @@
+import {IRequest} from "@shared/models/i-request";
 import axios, {AxiosResponse} from "axios";
-import {IRequest} from "../../models/i-request";
 
 export const instance = axios.create({
     headers: {

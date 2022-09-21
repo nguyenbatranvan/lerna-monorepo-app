@@ -1,5 +1,5 @@
-import {METHOD} from "../../constant/api-constant";
-import {IRequest} from "../../models/i-request";
+import {METHOD} from "@shared/constant/api-constant";
+import {IRequest} from "@shared/models/i-request";
 
 export async function fetcher(args: IRequest) {
     let url = args.url;
