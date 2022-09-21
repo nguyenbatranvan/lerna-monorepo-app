@@ -8,7 +8,7 @@ interface IOptionsAuth {
 export function withAuthServerSideProps(getServerSidePropsFunc, options?: IOptionsAuth) {
     return async (context) => {
         const NextRequestMetaSymbol = Reflect.ownKeys(context.req).find(key => key.toString() === 'Symbol(NextRequestMeta)');
-        const fullPath = context.req[NextRequestMetaSymbol].__NEXT_INIT_URL;
+        const fullPath = context.req[NextRequestMetaSymbol!].__NEXT_INIT_URL;
         const url = new URL(fullPath);
         const origin = url.origin;
         // const protocol = (process.env.NODE_ENV === "production" ? 'https://' : 'http://')
